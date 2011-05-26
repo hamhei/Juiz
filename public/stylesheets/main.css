@@ -1,0 +1,20 @@
+body{
+  background-image: url("http://a3.twimg.com/profile_background_images/250993792/110502_4.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+div#wrapper{
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+}
+div.tweet {
+  width: 600px;
+  height: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  border: thin solid #222222;
+  background-color: #ffffff;
+  background-image: none;
+  font-style: oblique;
+}
