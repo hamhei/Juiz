@@ -31,14 +31,16 @@ class DashboardController < ApplicationController
     p tweets
 
     db_tweet = Request.find(:all, :order => 'tweet_datetime DESC').first
-    recent_tweet_head = 0 # tweets.length
+    recent_tweet_head = 0
     unless db_tweet.nil?
       tweets.each_with_index do |t, i|
         if t.id_str == db_tweet.tweet_id
 	      recent_tweet_head = i
           break
         end
-      end
+      end	
+    else 
+      recent_tweet_head = tweets.length
     end
 
 	p recent_tweet_head
