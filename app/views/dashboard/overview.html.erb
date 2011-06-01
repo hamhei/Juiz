@@ -7,10 +7,10 @@
 	<h1><%= image_tag "https://si3.twimg.com/profile_images/1362935298/__________2011-05-21_15.05.30_.png", :size => "70x80" %> Juiz in CSS</h1>
 	<h3>Requests:</h3>
 	<% @requests.each do |r| %>
-	  <b><%= image_tag r.profile_image_url %> <%= r.noblesse %> <%= link_to "("+r.tweet_datetime+")", "https://twitter.com/#!/"+r.noblesse+"/status/"+r.tweet_id.to_s %>: </b>
-	  <div class = "tweet"><%= r.tweet %></div>
+	  <b><%= image_tag r.profile_image_url %> <%= r.noblesse %> <%= link_to "("+r.tweet_datetime+")", "https://twitter.com/#!/"+r.noblesse+"/status/"+r.tweet_id %>: </b>
+	  <div class = "tweet"><%=h r.tweet %></div>
 	  <% unless r.tweet_url == nil %>
-	  <div class="tweet" style="margin-left: 50px;"> <%= image_tag "https://si3.twimg.com/profile_images/1362935298/__________2011-05-21_15.05.30_.png", :size => "35x40" %> <%= r.tweet_url %></div>
+	  <div class="tweet" style="margin-left: 50px;"> <%= image_tag "https://si3.twimg.com/profile_images/1362935298/__________2011-05-21_15.05.30_.png", :size => "35x40" %> <%=h r.tweet_url %></div>
 	  <% end %>
 	  <%= form_tag :action => "noblesse_oblige" do %>
 	    <%= hidden_field_tag "request_tweet_id", r.tweet_id %>

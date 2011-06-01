@@ -1,7 +1,8 @@
 body{
   background-image: url("http://a3.twimg.com/profile_background_images/250993792/110502_4.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-attachment: scroll;
 }
 div#wrapper{
   width: auto;
