@@ -10,15 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110526124917) do
+ActiveRecord::Schema.define(:version => 20110530184525) do
 
   create_table "requests", :force => true do |t|
-    t.integer  "tweet_id"
+    t.string   "tweet_id"
+    t.string   "tweet"
     t.boolean  "check"
     t.string   "noblesse"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "tweet"
     t.string   "profile_image_url"
     t.string   "tweet_datetime"
     t.string   "tweet_url"
@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(:version => 20110526124917) do
     t.string   "tweet"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "request_id"
   end
 
 end

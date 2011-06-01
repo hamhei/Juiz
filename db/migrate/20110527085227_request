@@ -1,0 +1,17 @@
+class Request < ActiveRecord::Migration
+  def self.up
+    create_table :requests do |t|
+      t.integer :tweet_id
+      t.string  :tweet
+      t.boolean :check
+      t.string  :noblesse
+	  t.string  :tweet_datetime
+	  t.string  :tweet_url
+	  t.string  :profile_image_url
+      t.timestamps
+  end
+
+  def self.down
+    drop_table :requests
+  end
+end
