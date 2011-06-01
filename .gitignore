@@ -4,4 +4,4 @@ log/*.log
 tmp/
 #*
 config/base.yml
-
+config/database.yml
