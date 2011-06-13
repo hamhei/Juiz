@@ -1,8 +1,5 @@
 body{
-  background-image: url("http://a3.twimg.com/profile_background_images/250993792/110502_4.jpg");
-  background-repeat: repeat-y;
-  background-position: top center;
-  background-attachment: scroll;
+  background: #FCFBF7 url(/images/bg_css_juiz.jpg) no-repeat fixed right bottom;)
 }
 div#wrapper{
   width: auto;
