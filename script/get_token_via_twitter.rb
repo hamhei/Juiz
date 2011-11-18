@@ -5,8 +5,8 @@ require 'rubygems'
 require 'oauth'
 # require 'oauth-patch'
 
-CONSUMER_KEY = 'AZj3Yq6t4IfIsTq0lwzftA'
-CONSUMER_SECRET = 'b2mSsZHrb8SdKmlGUtsMzyAgUc3aR7zeC0SYsBSBFRg'
+CONSUMER_KEY = 'r0jUc3YlovqkiBx0uByUpQ'
+CONSUMER_SECRET = 'i1hbdCaKOs3kUBlvoVi82EMV9grQTJ2Bgdso6beFeY'
 
 consumer = OAuth::Consumer.new(
   CONSUMER_KEY,

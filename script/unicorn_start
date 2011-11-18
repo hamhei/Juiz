@@ -1,0 +1,9 @@
+#!/bin/bash
+UNICORN_RAILS_BIN=/usr/local/bin/unicorn_rails
+MY_RAILS_ROOT=/home/hamhei/project/Juiz
+MY_UNICORN_CONFIG=config/unicorn.rb
+MY_RAILS_ENV=development
+
+pushd $MY_RAILS_ROOT
+rvmsudo $UNICORN_RAILS_BIN -p 80 -c $MY_UNICORN_CONFIG -D
+popd

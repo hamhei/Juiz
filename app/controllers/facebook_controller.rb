@@ -1,0 +1,6 @@
+class FacebookController < ApplicationController
+
+
+
+
+end

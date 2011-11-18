@@ -1,19 +1,20 @@
 source 'http://rubygems.org'
-
  gem 'rails', '3.0.7'
-  gem 'twitter4r'
+ gem 'twitter4r'
+ gem 'twitpic-full'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+ gem 'simple_oauth', '0.1.0'
 
 gem 'ruby-mysql'
 # gem 'sqlite3'
 #  gem 'sqlite3-ruby', '1.2.3'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'

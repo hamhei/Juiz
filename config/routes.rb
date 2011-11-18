@@ -5,6 +5,9 @@ Juiz::Application.routes.draw do
       post 'juiz/noblesse_oblige' => 'dashboard#noblesse_oblige'
     end
 
+	controller 'hamsketch' do
+	  # post 'putImage' => 'hamsketch#putImage'
+    end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
